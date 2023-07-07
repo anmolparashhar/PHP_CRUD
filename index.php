@@ -95,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form action="/iNotes/index.php" method="POST">
+        <form action="/myProjects/iNotes/index.php" method="POST">
           <div class="modal-body">
             <input type="hidden" name="snoEdit" id="snoEdit">
             <div class="form-group">
@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
   </div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"> <img src="/iNotes/logo.png" height="28px" alt=""> iNotes</a>
+    <a class="navbar-brand" href="#"> <img src="/myProjects/iNotes/logo.png" height="28px" alt=""> iNotes</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -173,7 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   ?>
   <div class="container  my-4">
     <h2>Add a Note to iNotes</h2>
-    <form action="/iNotes/index.php" method="POST">
+    <form action="/myProjects/iNotes/index.php" method="POST">
       <div class="form-group">
         <label for="title">Note Title</label>
         <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp" placeholder="">
@@ -258,7 +258,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if (confirm("Do you want to delete this note?")) {
           console.log("yes");
-          window.location = `/iNotes/index.php?delete=${sno}`;
+          window.location = `/myProjects/iNotes/index.php?delete=${sno}`;
         }
         else {
           console.log("no");
